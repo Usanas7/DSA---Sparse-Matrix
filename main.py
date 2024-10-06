@@ -1,7 +1,7 @@
 import re
 
 class SparseMatrix:
-    def _init_(self, file_path=None, rows=0, cols=0):
+    def _init_(self, file_path=None, rows=0, cols=0):  # Fixed constructor
         self.rows = rows
         self.cols = cols
         self.data = {}
@@ -112,5 +112,5 @@ def main():
         print(f"({row}, {col}, {value})")
 
 
-if _name_ == "_main_":
+if _name_ == "_main_":  # Fixed main block
     main()
